@@ -72,8 +72,8 @@ function library:new(props)
 	local mainframe = utility.new(
 		"Frame",
 		{
-			BackgroundTransparency = 1,
-			Size = UDim2.new(0,525,0,350),
+			BackgroundTransparency = 0.5,
+			Size = UDim2.new(0,525,0,300),
 			Position = UDim2.new(0.092,0,0.21,0),
 			Parent = screen
 		}
