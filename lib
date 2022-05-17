@@ -73,7 +73,7 @@ function library:new(props)
 		"Frame",
 		{
 			BackgroundTransparency = 0.5,
-			Size = UDim2.new(0,525,0,300),
+			Size = UDim2.new(0,490,0,300),
 			Position = UDim2.new(0.092,0,0.21,0),
 			Parent = screen
 		}
