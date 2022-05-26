@@ -23,14 +23,14 @@ fontsize = 15,
 titlesize = 18,
    font = Enum.Font.Code,
     background = "rbxassetid://6071579801",
-    tilesize = 90,
+     tilesize = 90,
     cursor = false,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    accentcolor = Color3.fromRGB(240, 240, 0),
-    accentcolor2 = Color3.fromRGB(240, 240, 0),
+    accentcolor = Color3.fromRGB(231, 235, 0),
+    accentcolor2 = Color3.fromRGB(231, 235, 0),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -42,7 +42,6 @@ titlesize = 18,
     buttoncolor2 = Color3.fromRGB(39, 39, 39),
     itemscolor = Color3.fromRGB(200, 200, 200),
     itemscolor2 = Color3.fromRGB(210, 210, 210)
-
 }
 
 function library:CreateWatermark(name, position)
