@@ -3383,7 +3383,14 @@ function library:CreateWindow(name, size, hidebutton)
 
             local ConfigName = configSystem.sector:AddTextbox("Config Name", "", ConfigName, function() end, "")
             local default = tostring(listfiles(configSystem.configFolder)[1] or ""):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", "")
-     configSystem.Create = configSystem.sector:AddButton("Create", function()
+            local Config = configSystem.sector:AddDropdown("Configs", {}, default, false, function() end, "")
+            for i,v in pairs(listfiles(configSystem.configFolder)) do
+                if v:find(".txt") then
+                    Config:Add(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
+                end
+            end
+
+            configSystem.Create = configSystem.sector:AddButton("Create", function()
                 for i,v in pairs(listfiles(configSystem.configFolder)) do
                     Config:Remove(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
                 end
@@ -3414,14 +3421,6 @@ function library:CreateWindow(name, size, hidebutton)
                     end
                 end
             end)
-            local Config = configSystem.sector:AddDropdown("Configs", {}, default, false, function() end, "")
-            for i,v in pairs(listfiles(configSystem.configFolder)) do
-                if v:find(".txt") then
-                    Config:Add(tostring(v):gsub(configSystem.configFolder .. "\\", ""):gsub(".txt", ""))
-                end
-            end
-
-       
 
             configSystem.Save = configSystem.sector:AddButton("Save", function()
                 local config = {}
@@ -3501,7 +3500,7 @@ function library:CreateWindow(name, size, hidebutton)
             return configSystem
         end
 
-        --[[ not finished lol
+       
         function tab:CreatePlayerlist(name)
             local list = { }
             list.name = name or ""
@@ -3618,7 +3617,7 @@ function library:CreateWindow(name, size, hidebutton)
             
             return list
         end
-        ]]--
+    
 
         table.insert(window.Tabs, tab)
         return tab
