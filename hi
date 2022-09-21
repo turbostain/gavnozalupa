@@ -1532,19 +1532,7 @@ function library:init()
                     Parent = objs.background;
                 })
 
-  objs.sat1 = utility:Draw('Image', {
-                    Size = newUDim2(1,0,1,0);
-                    Data = library.images.colorsat1;
-                    ZIndex = z+3;
-                    Parent = objs.mainColor;
-                })
-
-                objs.sat2 = utility:Draw('Image', {
-                    Size = newUDim2(1,0,1,0);
-                    Data = library.images.colorsat2;
-                    ZIndex = z+4;
-                    Parent = objs.mainColor;
-                })
+  
 
                 objs.colorBorder = utility:Draw('Square', {
                     Size = newUDim2(1,2,1,2);
