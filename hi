@@ -4007,6 +4007,7 @@ function library:init()
                 end
 
                 -- // Keybind
+                 -- // Keybind
                 function section:AddBind(data)
                     local bind = {
                         class = 'bind';
@@ -4048,7 +4049,7 @@ function library:init()
 
                         objs.holder = utility:Draw('Square', {
                             Size = newUDim2(1,0,0,19);
-                            Transparency = 1;
+                            Transparency = 0;
                             ZIndex = z+5;
                             Parent = section.objects.optionholder;
                         })
