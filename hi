@@ -65,11 +65,11 @@ local library = {
         ['fps'] = 0;
         ['ping'] = 0;
     };
-    images = {
-        ['gradientp90'] = 'https://cdn.discordapp.com/attachments/1003280156749742111/1010461433085046805/unknown.png';
-        ['gradientp45'] = 'https://cdn.discordapp.com/attachments/1003280156749742111/1010461632238989402/unknown.png';
-        ['colorhue'] = 'https://cdn.discordapp.com/attachments/1003280156749742111/1010461744721834054/unknown.png';
-        ['colortrans'] = 'https://cdn.discordapp.com/attachments/1003280156749742111/1010461860329439332/unknown.png';
+  images = {
+        ['gradientp90'] = 'https://raw.githubusercontent.com/portallol/luna/main/modules/gradient90.png';
+        ['gradientp45'] = 'https://raw.githubusercontent.com/portallol/luna/main/modules/gradient45.png';
+        ['colorhue'] = 'https://raw.githubusercontent.com/portallol/luna/main/modules/lgbtqshit.png';
+        ['colortrans'] = 'https://raw.githubusercontent.com/portallol/luna/main/modules/trans.png';
     };
     numberStrings = {['Zero'] = 0, ['One'] = 1, ['Two'] = 2, ['Three'] = 3, ['Four'] = 4, ['Five'] = 5, ['Six'] = 6, ['Seven'] = 7, ['Eight'] = 8, ['Nine'] = 9};
     signal = loadstring(game:HttpGet('https://pastebin.com/raw/PdzY4PPF'))();
